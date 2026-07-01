@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="navbar-container">
-        <nav class="navbar glass-effect">
+        <nav class="navbar glass-effect" aria-label="Navegação principal">
             <a href="#inicio" class="logo-link">
                 <div class="logo">&lt;DEV&gt;Rafilsk</div>
             </a>
@@ -26,8 +26,8 @@
                 <li><a href="#certificacoes">Certificações</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-            <button id="theme-toggle" class="btn-theme">Cor</button>
-            <div class="menu-icon">
+            <button id="theme-toggle" class="btn-theme" aria-label="Alternar tema">Cor</button>
+            <div class="menu-icon" aria-hidden="true">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -43,19 +43,20 @@
                 <p id="texto-digitado" style="min-height: 50px;"></p>
                 <div class="botoes-cta">
                     <a href="https://github.com/Dev-Rafilsk" target="_blank" rel="noopener noreferrer" class="btn btn-secundario" style="display: inline-flex; align-items: center; gap: 10px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>Github
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>Github
                     </a>
                     <a href="https://linkedin.com/in/rafaeltech72" target="_blank" rel="noopener noreferrer" class="btn btn-secundario" style="display: inline-flex; align-items: center; gap: 10px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                         LinkedIn
                     </a>
-                     <a href="CV-RafaelGuimaraes-26.2.pdf" target="_blank" class="btn-projeto btn-live">
-                <i class="fa-solid fa-file-pdf"></i> Curriculo - CV </a>
+                    <a href="CV-RafaelGuimaraes-26.2.pdf" target="_blank" class="btn-projeto btn-live">
+                        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Curriculo - CV 
+                    </a>
                 </div>
             </div>
             <div class="hero-img" data-aos="fade-left">
                 <div class="circulo-fundo"></div>
-                <img src="eu-foto.jpeg" alt="Rafael Guimarães">
+                <img src="eu-foto.jpeg" alt="Foto de Rafael Guimarães">
             </div>
         </section>
 
@@ -63,7 +64,7 @@
             <div class="container">
                 <h2 class="titulo-secao">Resumo Profissional</h2>
                 <div class="glass-card conteudo-largo">
-                    <h4> Sou estudante de Engenharia de Software, atualmente no 4º semestre e em busca da primeira oportunidade como Estagiário ou Desenvolvedor Júnior. Possuo uma base sólida em lógica de programação e desenvolvimento web, construindo projetos práticos com Python, C e JavaScript. Trazendo a maturidade, resiliência e a capacidade de trabalhar sob pressão da minha vivência como técnico em enfermagem, meu foco atual é resolver problemas reais através de código limpo. Busco uma equipe colaborativa onde eu possa aplicar meus conhecimentos para gerar valor enquanto acelero meu aprendizado prático</h4>
+                    <p>Sou estudante de Engenharia de Software, atualmente no 4º semestre e em busca da primeira oportunidade como Estagiário ou Desenvolvedor Júnior. Possuo uma base sólida em lógica de programação e desenvolvimento web, construindo projetos práticos com Python, C e JavaScript. Trazendo a maturidade, resiliência e a capacidade de trabalhar sob pressão da minha vivência como técnico em enfermagem, meu foco atual é resolver problemas reais através de código limpo. Busco uma equipe colaborativa onde eu possa aplicar meus conhecimentos para gerar valor enquanto acelero meu aprendizado prático.</p>
                 </div>
             </div>
         </section>
@@ -73,25 +74,26 @@
                 <h2 class="titulo-secao">Habilidades & Conhecimento</h2>
                 <div class="grid-skills">
                     <div class="glass-card skill-box" data-aos="fade-up">
-                        <h3><i class="fa-solid fa-code"></i> Front & Back-End</h3>
+                        <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Front & Back-End</h3>
                         <ul class="lista-icones">
-                            <li><i class="fa-brands fa-js"></i>JavaScript</li>
-                            <li><i class="fa-brands fa-python"></i>Python</li>
-                            <li><i class="fa-brands fa-c"></i> C</li>
-                            <li><i class="fa-brands fa-html5"></i>HTML5</li>
-                            <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
+                            <li><i class="fa-brands fa-js" aria-hidden="true"></i>JavaScript</li>
+                            <li><i class="fa-brands fa-python" aria-hidden="true"></i>Python</li>
+                            <li><i class="fa-brands fa-c" aria-hidden="true"></i> C</li>
+                            <li><i class="fa-brands fa-html5" aria-hidden="true"></i>HTML5</li>
+                            <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i>CSS3</li>
                         </ul>
                     </div>
-                    <div class="glass-card skill-box" data-aos="fade-up" data-aos-delay="200"> <h3><i class="fa-solid fa-toolbox"></i> Ferramentas & Conceitos</h3>
+                    <div class="glass-card skill-box" data-aos="fade-up" data-aos-delay="200"> 
+                        <h3><i class="fa-solid fa-toolbox" aria-hidden="true"></i> Ferramentas & Conceitos</h3>
                         <ul class="lista-icones">
-                            <li><i class="fa-brands fa-git-alt"></i>Git</li>
-                            <li><i class="fa-brands fa-github"></i>GitHub</li>
-                            <li><i class="fa-solid fa-cloud"></i>Cloud Computing</li>
-                            <li><i class="fa-solid fa-shield-halved"></i>Cibersegurança</li>
-                            <li><i class="fa-solid fa-brain"></i>IA Generativa</li>
-                            <li><i class="fa-solid fa-satellite-dish"></i>Testes de API</li>
-                            <li><i class="fa-solid fa-flask"></i> Flask</li>
-                            <li><i class="devicon-visualstudio-plain"></i>Visual Studio</li>
+                            <li><i class="fa-brands fa-git-alt" aria-hidden="true"></i>Git</li>
+                            <li><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</li>
+                            <li><i class="fa-solid fa-cloud" aria-hidden="true"></i>Cloud Computing</li>
+                            <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>Cibersegurança</li>
+                            <li><i class="fa-solid fa-brain" aria-hidden="true"></i>IA Generativa</li>
+                            <li><i class="fa-solid fa-satellite-dish" aria-hidden="true"></i>Testes de API</li>
+                            <li><i class="fa-solid fa-flask" aria-hidden="true"></i> Flask</li>
+                            <li><i class="devicon-visualstudio-plain" aria-hidden="true"></i>Visual Studio</li>
                         </ul>
                     </div>
                 </div>
@@ -107,7 +109,7 @@
                         <div class="projeto-info">
                             <h3>Sistema de Chamadas Inclusiva e Inteligente | SCII</h3>
                             <strong>Projeto Finalista - Startup Experience 2026</strong>
-                            <p>SCII, sistema focado em acessibilidade no setor de saúde, integrando a ferramenta VLibras para comunicação inclusiva. Desenvolvido com atenção rigorosa à LGPD, implementando mascaramento de dados para proteção da privacidade dos pacientes. </p>
+                            <p>SCII, sistema focado em acessibilidade no setor de saúde, integrando a ferramenta VLibras para comunicação inclusiva. Desenvolvido com atenção rigorosa à LGPD, implementando mascaramento de dados para proteção da privacidade dos pacientes.</p>
                             <div class="techs">
                                 <span class="tag">Python</span>
                                 <span class="tag">JavaScript</span>
@@ -115,7 +117,28 @@
                                 <span class="tag">CSS3</span>
                             </div>
                              <a href="https://github.com/Dev-Rafilsk/SCII-Sistema-de-Inclusao" target="_blank" class="btn-projeto btn-repo">
-                            <i class="fa-brands fa-github"></i> Código</a>
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Código</a>
+                        </div>
+                    </article>
+                    
+                    <article class="glass-card projeto-card">
+                        <div class="projeto-info">
+                            <h3>Landing Page | Profissional de saúde</h3>
+                            <strong>Projeto Freelancer</strong>
+                            <p>Landing Page profissional. Desenvolvimento web com foco em acessibilidade, cuidado e bem-estar para conectar pacientes a uma profissional de saúde. Com design responsivo, boas práticas de UI/UX, integração com o VLibras.</p>
+                            <div class="techs">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="botoes-projeto">
+                                <a href="https://github.com/Dev-Rafilsk/DraManuelaAguiar" target="_blank" class="btn-projeto btn-repo">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i> Código
+                                </a>
+                                 <a href="http://www.dramanuelaaguiar.com.br/" target="_blank" class="btn-projeto btn-live">
+                                    <i class="fa-solid fa-desktop" aria-hidden="true"></i> Website
+                                </a>
+                            </div>
                         </div>
                     </article>
 
@@ -129,94 +152,73 @@
                                 <span class="tag">CSS3</span>
                             </div>
                             <a href="https://github.com/Dev-Rafilsk/ProfileWeb" target="_blank" class="btn-projeto btn-repo">
-                <i class="fa-brands fa-github"></i> Código
-            </a>
-            <a href="https://dev-rafilsk.github.io/ProfileWeb/" target="_blank" class="btn-projeto btn-live">
-                <i class="fa-solid fa-desktop"></i> Website
-            </a>
+                                <i class="fa-brands fa-github" aria-hidden="true"></i> Código
+                            </a>
+                            <a href="https://dev-rafilsk.github.io/ProfileWeb/" target="_blank" class="btn-projeto btn-live">
+                                <i class="fa-solid fa-desktop" aria-hidden="true"></i> Website
+                            </a>
                         </div>
                     </article>
-<article class="glass-card projeto-card">
-    <div class="projeto-info">
-        <h3>Landing Page | Profissional de saúde</h3>
-        <strong>Projeto Freelancer</strong>
-        <p>Landing Page profissional. Desenvolvimento web com foco em acessibilidade, cuidado e bem-estar para conectar pacientes a uma profissional de saúde. Com design responsivo, boas práticas de UI/UX, integração com o VLibras.</p>
-        <div class="techs">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">JavaScript</span>
-        </div>
-        <div class="botoes-projeto">
-            <a href="https://github.com/Dev-Rafilsk/DraManuelaAguiar" target="_blank" class="btn-projeto btn-repo">
-                <i class="fa-brands fa-github"></i> Código
-            </a>
-             <a href="http://www.dramanuelaaguiar.com.br/" target="_blank" class="btn-projeto btn-live">
-                <i class="fa-solid fa-desktop"></i> Website
-            </a>
-        </div>
-    </div>
-</article>
 
                     <article class="glass-card projeto-card">
-    <div class="projeto-info">
-        <h3>Gerenciador de Veículos - Desafio Solution+</h3>
-        <p>Aplicação Full Stack em C# e .NET para gerenciamento completo de veículos. Projeto focado em boas práticas de arquitetura MVC e manipulação de dados, superando os requisitos do desafio técnico.</p>
-        <div class="techs">
-            <span class="tag">C#</span>
-            <span class="tag">ASP.NET Core MVC</span>
-            <span class="tag">Git</span>
-            <span class="tag">HTML5 & CSS3</span>
-        </div>
-        <div class="botoes-projeto">
-            <a href="https://github.com/Dev-Rafilsk/CRUD_CSHARP" target="_blank" class="btn-projeto btn-repo">
-                <i class="fa-brands fa-github"></i> Código
-            </a>
-        </div>
-    </div>
-</article>
+                        <div class="projeto-info">
+                            <h3>Gerenciador de Veículos - Desafio Solution+</h3>
+                            <p>Aplicação Full Stack em C# e .NET para gerenciamento completo de veículos. Projeto focado em boas práticas de arquitetura MVC e manipulação de dados, superando os requisitos do desafio técnico.</p>
+                            <div class="techs">
+                                <span class="tag">C#</span>
+                                <span class="tag">ASP.NET Core MVC</span>
+                                <span class="tag">Git</span>
+                                <span class="tag">HTML5 & CSS3</span>
+                            </div>
+                            <div class="botoes-projeto">
+                                <a href="https://github.com/Dev-Rafilsk/CRUD_CSHARP" target="_blank" class="btn-projeto btn-repo">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
 
-<article class="glass-card projeto-card">
-    <div class="projeto-info">
-        <h3>Lógica em Linguagem C</h3>
-        <p>Motor de xadrez desenvolvido em C puro. Foco em manipulação de memória, ponteiros, matrizes multidimensionais e lógica de validação de movimentos complexos.</p>
-        <div class="techs">
-            <span class="tag">Linguagem C</span>
-            <span class="tag">Estrutura de Dados</span>
-            <span class="tag">Algoritmos</span>
-            <span class="tag">Ponteiros</span>
-        </div>
-        <div class="botoes-projeto">
-            <a href="https://github.com/Dev-Rafilsk/Xadrez-Logica" target="_blank" class="btn-projeto btn-repo">
-                <i class="fa-brands fa-github"></i> Código
-            </a>
-        </div>
-    </div>
-</article>
+                    <article class="glass-card projeto-card">
+                        <div class="projeto-info">
+                            <h3>Lógica em Linguagem C</h3>
+                            <p>Motor de xadrez desenvolvido em C puro. Foco em manipulação de memória, ponteiros, matrizes multidimensionais e lógica de validação de movimentos complexos.</p>
+                            <div class="techs">
+                                <span class="tag">Linguagem C</span>
+                                <span class="tag">Estrutura de Dados</span>
+                                <span class="tag">Algoritmos</span>
+                                <span class="tag">Ponteiros</span>
+                            </div>
+                            <div class="botoes-projeto">
+                                <a href="https://github.com/Dev-Rafilsk/Xadrez-Logica" target="_blank" class="btn-projeto btn-repo">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
 
-<article class="glass-card projeto-card">
-    <div class="projeto-info">
-        <h3>Sistema de analise de senhas</h3>
-        <p>Ferramenta de automação para análise de cibersegurança que verifica a entropia de senhas e consulta APIs de vazamento de dados para validar credenciais. Foco em scripts de automação e tratamento de dados sensíveis.</p>
-        <div class="techs">
-            <span class="tag">Python</span>
-            <span class="tag">Cibersegurança</span>
-            <span class="tag">Hashing</span>
-            <span class="tag">Scripting</span>
-        </div>
-        <div class="botoes-projeto">
-            <a href="https://github.com/Dev-Rafilsk/Analisador-de-senhas" target="_blank" class="btn-projeto btn-repo">
-                <i class="fa-brands fa-github"></i> Código
-            </a>
-        </div>
-    </div>
-</article>
+                    <article class="glass-card projeto-card">
+                        <div class="projeto-info">
+                            <h3>Sistema de analise de senhas</h3>
+                            <p>Ferramenta de automação para análise de cibersegurança que verifica a entropia de senhas e consulta APIs de vazamento de dados para validar credenciais. Foco em scripts de automação e tratamento de dados sensíveis.</p>
+                            <div class="techs">
+                                <span class="tag">Python</span>
+                                <span class="tag">Cibersegurança</span>
+                                <span class="tag">Hashing</span>
+                                <span class="tag">Scripting</span>
+                            </div>
+                            <div class="botoes-projeto">
+                                <a href="https://github.com/Dev-Rafilsk/Analisador-de-senhas" target="_blank" class="btn-projeto btn-repo">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i> Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <section id="formacao" class="secao-padrao">
             <div class="container">
-                
                 <h2 class="titulo-secao">Formação Acadêmica</h2>
                 <div class="glass-card conteudo-largo destaque-borda">
                     <div class="item-formacao">
@@ -225,97 +227,99 @@
                         <p class="periodo">Fev/2025 - Nov/2028 (Cursando)</p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div id="certificacoes" style="padding-top: 100px; margin-top: -40px;"></div>
-
+        <section id="certificacoes" class="secao-padrao">
+            <div class="container">
                 <h2 class="titulo-secao">Cursos & Certificações</h2>
-                
                 <div class="grid-certificacoes">
 
-                    <div class="glass-card card-certificacao">
+                    <article class="glass-card card-certificacao">
                         <div class="cert-header">
                             <h3>Fundamentos de IA Generativa</h3>
                             <span class="horas">8h</span>
                         </div>
                         <p>Microsoft</p>
-                    </div>
+                    </article>
 
-                    <div class="glass-card card-certificacao">
+                    <article class="glass-card card-certificacao">
                         <div class="cert-header">
                             <h3>IA para Devs com Gemini</h3>
                             <span class="horas">10h</span>
                         </div>
                         <p>Alura</p>
-                    </div>
+                    </article>
 
-                    <div class="glass-card card-certificacao">
+                    <article class="glass-card card-certificacao">
                         <div class="cert-header">
                             <h3>Cibersegurança</h3>
                             <span class="horas">120h</span>
                         </div>
                         <p>FIAP</p>
-                    </div>
+                    </article>
 
-                    <div class="glass-card card-certificacao">
+                    <article class="glass-card card-certificacao">
                         <div class="cert-header">
                             <h3>Engenharia de Software</h3>
                             <span class="horas">100h</span>
                         </div>
                         <p>FIAP</p>
-                    </div>
+                    </article>
 
-                    <div class="glass-card card-certificacao">
+                    <article class="glass-card card-certificacao">
                         <div class="cert-header">
                             <h3>Python</h3>
                             <span class="horas">80h</span>
                         </div>
                         <p>FIAP</p>
-                    </div>
+                    </article>
 
-                    <div class="glass-card card-certificacao">
+                    <article class="glass-card card-certificacao">
                         <div class="cert-header">
                             <h3>Cloud Computing</h3>
                             <span class="horas">80h</span>
                         </div>
                         <p>Wyden</p>
-                    </div>
+                    </article>
 
-                    <div class="glass-card card-certificacao">
+                    <article class="glass-card card-certificacao">
                         <div class="cert-header">
                             <h3>HTML5 e CSS3</h3>
                             <span class="horas">80h</span>
                         </div>
                         <p>Wyden</p>
-                    </div>
+                    </article>
 
-                    <div class="glass-card card-certificacao">
+                    <article class="glass-card card-certificacao">
                         <div class="cert-header">
                             <h3>JavaScript</h3>
                             <span class="horas">20h</span>
                         </div>
                         <p>Instituto Federal (IFRS)</p>
-                    </div>
+                    </article>
 
-                     <div class="glass-card card-certificacao">
+                     <article class="glass-card card-certificacao">
                         <div class="cert-header">
                             <h3>Arquitetura MVC</h3>
                             <span class="horas">80h</span>
                         </div>
                         <p>Wyden</p>
-                    </div>
+                    </article>
 
-                    <div class="glass-card card-certificacao">
+                    <article class="glass-card card-certificacao">
                         <div class="cert-header">
                             <h3>PHP</h3>
                             <span class="horas">80h</span>
                         </div>
                         <p>Wyden</p>
-                    </div>
+                    </article>
 
                 </div> 
             </div>
         </section>
     </main>
+
     <footer id="contato" class="secao-padrao">
         <div class="container">
            <div class="footer-content">
@@ -325,24 +329,22 @@
             <form action="https://formspree.io/f/maqqwprw" method="POST" class="form-contato">
 
                 <div class="input-group">
-                    <input type="text" name="name" placeholder="Seu nome" required>
-                    <input type="email" name="email" placeholder="Seu email" required>
+                    <input type="text" name="name" placeholder="Seu nome" required aria-label="Seu nome">
+                    <input type="email" name="email" placeholder="Seu email" required aria-label="Seu email">
                 </div>
     
-                <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                <textarea name="message" placeholder="Sua mensagem" required aria-label="Sua mensagem"></textarea>
     
-                <button type="submit" class="btn btn-destaque">Enviar  
-                </button>
+                <button type="submit" class="btn btn-destaque">Enviar</button>
             </form>
     
-    <div class="footer-links" style="margin-top: 20px;">
-        <a href="https://github.com/Dev-Rafilsk" target="_blank" class="btn btn-secundario"><i class="fa-brands fa-github"></i> GitHub</a>
-        <a href="https://linkedin.com/in/rafaeltech72" target="_blank" class="btn btn-secundario"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-    </div>
-</div>
+            <div class="footer-links" style="margin-top: 20px;">
+                <a href="https://github.com/Dev-Rafilsk" target="_blank" class="btn btn-secundario"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                <a href="https://linkedin.com/in/rafaeltech72" target="_blank" class="btn btn-secundario"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
             </div>
-            <p class="footer-copy">&copy; 2026 Desenvolvido por &lt;Dev&gt;Rafilsk.</p>
         </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Desenvolvido por &lt;Dev&gt;Rafilsk.</p>
     </footer>
 
     <div vw class="enabled">
