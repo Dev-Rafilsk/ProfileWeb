@@ -2,6 +2,7 @@ AOS.init({
     duration: 1000,
     once: true,
 });
+
 document.addEventListener('DOMContentLoaded', function() {
 
     const menuIcon = document.querySelector('.menu-icon');
@@ -51,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', ativarLinkNoScroll);
 
-    const textoParaDigitar = "Desenvolvedor em formação focado em desenvolvimento Fullstack e em transição de carreira unindo a disciplina da área da saúde com a lógica da Engenharia de Software para criar soluções robustas e funcionais.";
+    const textoParaDigitar = "Desenvolvedor em formação, focado em desenvolvimento Front-end e em transição de carreira. Unindo a disciplina da área da saúde com a lógica da Engenharia de Software para criar soluções robustas e funcionais.";
     const elementoTexto = document.getElementById('texto-digitado');
     const velocidadeDigitacao = 60;
     let indiceAtual = 0;
@@ -65,4 +66,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     digitar();
+
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'light') {
+        body.classList.add('light-mode');
+        themeToggleBtn.textContent = 'Modo Escuro';
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        body.classList.toggle('light-mode');
+        
+        if (body.classList.contains('light-mode')) {
+            themeToggleBtn.textContent = 'Modo Escuro';
+            localStorage.setItem('theme', 'light');
+        } else {
+            themeToggleBtn.textContent = 'Modo Claro';
+            localStorage.setItem('theme', 'dark');
+        }
+    });
 });
