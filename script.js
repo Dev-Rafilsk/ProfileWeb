@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const textoParaDigitar = "Desenvolvedor em formação, focado em desenvolvimento Front-end e em transição de carreira. Unindo a disciplina da área da saúde com a lógica da Engenharia de Software para criar soluções robustas e funcionais.";
     const elementoTexto = document.getElementById('texto-digitado');
-    const velocidadeDigitacao = 60;
+    const velocidadeDigitacao = 90;
     let indiceAtual = 0;
 
     function digitar() {
@@ -106,7 +106,11 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-        closeModalBtn.addEventListener('click', (event) => {
+        closeModalBtn.addEventListener('click', () => {
+            modal.close();
+        });
+
+        modal.addEventListener('click', (event) => {
             const dialogDimensions = modal.getBoundingClientRect();
             if (
                 event.clientX < dialogDimensions.left ||
