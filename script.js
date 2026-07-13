@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const themeToggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
-
     const savedTheme = localStorage.getItem('theme');
 
     if (savedTheme === 'light') {
@@ -88,4 +87,35 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('theme', 'dark');
         }
     });
+
+    const cardsCursos = document.querySelectorAll('.card-certificacao');
+    const modal = document.getElementById('curso-modal');
+    const closeModalBtn = document.getElementById('close-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
+
+    if (modal) {
+        cardsCursos.forEach(card => {
+            card.addEventListener('click', () => {
+                const title = card.getAttribute('data-title');
+                const description = card.getAttribute('data-description');
+
+                modalTitle.textContent = title;
+                modalDescription.textContent = description;
+                modal.showModal();              
+            });
+        });
+
+        closeModalBtn.addEventListener('click', (event) => {
+            const dialogDimensions = modal.getBoudingClientRect();
+            if (
+                event.clientX < dialogDimensions.left ||
+                event.clientX > dialogDimensions.right ||
+                event.clientY < dialogDimensions.top ||
+                event.clientY > dialogDimensions.button
+            ) {
+                modal.close();
+            }
+        });
+    }
 });
