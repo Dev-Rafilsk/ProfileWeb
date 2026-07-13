@@ -107,12 +107,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         closeModalBtn.addEventListener('click', (event) => {
-            const dialogDimensions = modal.getBoudingClientRect();
+            const dialogDimensions = modal.getBoundingClientRect();
             if (
                 event.clientX < dialogDimensions.left ||
                 event.clientX > dialogDimensions.right ||
                 event.clientY < dialogDimensions.top ||
-                event.clientY > dialogDimensions.button
+                event.clientY > dialogDimensions.bottom
             ) {
                 modal.close();
             }
