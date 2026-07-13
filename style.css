@@ -392,6 +392,32 @@ ul { list-style: none; }
 
 .card-certificacao {
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-ver {
+    margin-top: auto;
+    padding-top: 15px;
+    background: transparent;
+    border: 2px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: left;
+    gap: 6px;
+    align-self: flex-start;
+    width: max-content;
+}
+
+.card-certificacao:hover .btn-ver {
+    background: var(--cor-secundaria);
+    color: var(--cor-fundo);
 }
 
 dialog {
